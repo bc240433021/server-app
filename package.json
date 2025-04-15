@@ -1,0 +1,62 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "The server of LMS",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development & nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:fix": "eslint --ext .js,.jsx . --fix"
+  },
+  "author": {
+    "email": "azammmgol@gmail.com",
+    "name": "Minhazur Rahman Ratul",
+    "url": "http://developeratul.vercel.app"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.895.0",
+    "axios": "^1.2.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.8",
+    "dayjs-es": "^1.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "cheerio": "^1.0.0",
+    "@pinecone-database/pinecone": "^5.1.1",
+    "@langchain/textsplitters": "^0.1.0",
+    "openai": "^4.91.1",
+    "mammoth": "^1.9.0",
+    "pdf-parse": "^1.1.1",
+    "officeparser": "^5.1.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.8.4",
+    "multer": "1.4.2",
+    "multer-s3": "^2.9.0",
+    "nanoid": "^4.0.1",
+    "nodemailer": "^6.9.3",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "socket.io": "^4.6.1",
+    "stripe": "^11.7.0",
+    "zod": "^3.20.2",
+    "zod-express-middleware": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "eslint": "^8.32.0",
+    "nodemon": "^3.0.1"
+  }
+}
